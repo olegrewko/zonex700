@@ -1,0 +1,262 @@
+
+.footer {
+  &__content{
+        // padding: 0 ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+  &__column{
+
+    &:nth-child(1){
+      min-width: 150px;
+
+    }
+    &:nth-child(2){
+      min-width: 150px;
+      // margin-left: -50px;
+    }
+    &:nth-child(3){
+      max-width: 350px;
+      width: 100%;
+      // margin-left: -50px;
+    }
+  }
+
+  &__link{
+    color: var(--color-gray);
+    font-weight: 500;
+    font-size: 12px;
+    transition: all 0.3s;
+    &:hover{
+      color: var(--color-dark);
+      transition: all 0.3s;
+    }
+  }
+
+  &__title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color-tundora);
+  }
+  &__form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 450px;
+    width: 100%;
+
+  }
+  &__list--row {
+     font-weight: 500;
+    font-size: 12px;
+    color: black;
+    display: flex;
+    align-items: center;
+    .footer__item{
+      margin-bottom: 0;
+      color: black;
+      &:not(:last-child){
+        margin-right: 30px;
+      }
+    }
+  }
+  &__bottom-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+   &__bottom {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-top: 1px solid #eee;
+    padding: 0px 0;
+
+  }
+   &__navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+   }
+   &__navigation-item {
+    &:not(:last-child){
+        margin-right: 10px;
+      }
+   }
+  &__social{
+    margin-right: 10px;
+  }
+    @include xs {
+
+    .footer__column{
+
+    &:nth-child(1){
+      max-width: 250px;
+      width: 100%;
+      margin-left: 5px;
+    }
+    &:nth-child(2){
+      max-width: 250px;
+      width: 100%;
+      margin-left: 5px;
+    }
+  }
+   .footer__right{
+    margin-top: 10px;
+   }
+     .footer__title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color-tundora);
+  }
+    .footer__content{
+        padding: 0 5px;
+        padding-top: 10px;
+    padding-bottom: 10px;
+  }
+    }
+}
+.subscribe-form {
+  position: relative;
+  &__title{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__field{
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+  }
+  input{
+    max-width: 500px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 100px;
+
+    &::placeholder{
+      color: rgba(#000000, 0.7)
+    }
+  }
+ }
+ .social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  border-left: 2px solid #eee;
+  &__item{
+
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+
+  }
+  &__link{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  &--tw {
+    background-image: url(../../img/twitter.png);
+  }
+  &--fb {
+    background-image: url(../../img/facebook.png);
+  }
+  &--in {
+    background-image: url(../../img/instagram.png);
+  }
+  &--pin {
+    background-image: url(../../img/pinterest.png);
+  }
+}
+ }
+ .social-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1px 1px;
+  text-align: center;
+  img {
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+  }
+}
+.roll {
+  position: relative;
+  display: inline-block;
+  transition: all .4s;
+}
+.rollover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .4s;
+}
+.roll .rollover {
+  display: none;
+}
+.roll:hover .rollover {
+  transition: all .4s;
+  display: block;
+
+}
+.tiny-footer {
+
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0 5px;
+}
+.tiny-grey {
+font-weight: 500;
+font-size: 8px;
+line-height: 10px;
+color: grey;
+}
+.tiny-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item{
+
+      margin-right: 10px;
+
+  }
+}

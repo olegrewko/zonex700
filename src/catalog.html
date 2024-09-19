@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <!-- @include('partials/free-delivery.html') -->
+    @include('partials/header-grey.html')
+    <!-- @include('partials/breadcrumbs-catalog.html') -->
+    <main class="main">
+      @include('partials/hero-catalog.html')
+      @include('partials/free-delivery.html')
+      <section class="catalog">
+        <h2 class="visually-hidden">Catalog</h2>
+
+      @include('partials/breadcrumbs-catalog.html')
+      <div class="container catalog-content">
+        @include('partials/catalog-filters.html')
+        @include('partials/catalog-grid.html')
+      </div>
+
+      </section>
+    </main>
+    @include('partials/footer.html')
+
+  </div>
+     <script type="text/javascript">
+      $(document).ready(function () {
+        var defaults = {
+          containerID: "toTop",
+          containerHoverID: "toTopHover",
+          scrollSpeed: 1200,
+          easingType: "linear",
+        };
+
+        $().UItoTop({
+          easingType: "easeOutQuart",
+        });
+      });
+     </script>
+
+    <a href="#" id="toTop" style="display: block">
+      <span id="toTopHover" style="opacity: 1"> </span
+    ></a>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="js/libs.min.js"></script> -->
+    <script type="text/javascript">
+     $(function () {
+
+     $('.catalog-props-top__filter-btn').on('click', function(){
+    $('.catalog-props-top__filter-btn').removeClass('catalog-props-top__filter-btn--active');
+    $(this).addClass('catalog-props-top__filter-btn--active');
+     });
+
+    $('.button-list').on('click', function(){
+    $('.product').addClass('catalog-grid__item--list');
+  });
+
+    $('.button-grid').on('click', function(){
+    $('.product').removeClass('catalog-grid__item--list');
+  });
+
+});
+    </script>
+</body>
+
+</html>

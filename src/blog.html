@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+
+    @include('partials/header-grey.html')
+
+    <main class="main">
+      @include('partials/hero-blog.html')
+      <!-- <section class="blog"> -->
+        <h2 class="visually-hidden">Blog</h2>
+
+      <!-- @include('partials/breadcrumbs-catalog.html') -->
+      <!-- <div class="container"> -->
+        @include('partials/blog-content.html')
+
+
+      <!-- </div> -->
+
+      <!-- </section> -->
+    </main>
+    @include('partials/footer-black.html')
+
+  </div>
+     <script type="text/javascript">
+      $(document).ready(function () {
+        var defaults = {
+          containerID: "toTop",
+          containerHoverID: "toTopHover",
+          scrollSpeed: 1200,
+          easingType: "linear",
+        };
+
+        $().UItoTop({
+          easingType: "easeOutQuart",
+        });
+      });
+     </script>
+
+    <a href="#" id="toTop" style="display: block">
+      <span id="toTopHover" style="opacity: 1"> </span
+    ></a>
+</body>
+
+</html>

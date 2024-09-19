@@ -1,0 +1,38 @@
+.breadcrumbs{
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 0px 0;
+    border-bottom: 0px solid #eee;
+  }
+  &__item {
+    position: relative;
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+
+    &::after{
+      color: rgb(203, 216, 216);
+      content: "/";
+      position: absolute;
+      right: -20px;
+      top: 0;
+
+    }
+    }
+
+  &__link{
+    color: rgb(203, 216, 216);
+    font-size: 12px;
+    transition: all 0.3s;
+    &:hover{
+      color: var(--color-gray);
+      transition: all 0.3s;
+    }
+    &--current {
+      color: tomato;
+    }
+  }
+
+}

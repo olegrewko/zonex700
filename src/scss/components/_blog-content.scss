@@ -1,0 +1,97 @@
+.blog-content {
+
+		// min-width: 1170px;
+    width: 100%;
+
+		&__grid-main {
+       margin-top: 40px;
+       display: flex;
+       justify-content: space-between;
+
+
+
+		}
+
+		// .blog-content__w
+
+		&__w {
+      display: flex;
+      flex-direction: column;
+      // flex-shrink: 3;
+      margin-right: 5px;
+		}
+    &__box-girl-two{
+    position: relative;
+    max-width: 850px;
+    // height: 450px;
+    overflow: hidden;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    // background-image: url(../../img/girl-two.jpg);
+    background-size: cover;
+    background-position: center center;
+    }
+    &__img {
+        max-width: 850px;
+        // height: 450px;
+        // overflow: hidden;
+        width: 100%;
+           @include xs640 {
+      max-width: 60%;
+
+    }
+
+       @include xs420 {
+      max-width: 40%;
+
+    }
+  }
+
+    &__aside {
+      max-width: 200px;
+      width: 100%;
+        @include sm {
+
+         display: none;
+        }
+    }
+
+		// .blog-content__grid-submain
+
+		&__grid-submain {
+
+       margin-top: 10px;
+       display: flex;
+       justify-content: space-between;
+      // display: grid;
+      // grid-template-columns: 150px  1fr;
+      // grid-template-rows: auto;
+      // column-gap: 5px;
+
+      // @include sm {
+
+      //    grid-template-columns: 1fr;
+      //   }
+		}
+    &__filters {
+      margin-top: 20px;
+      width: 150px;
+      @include sm {
+
+         display: none;
+        }
+    }
+    &__content {
+      margin-left: 10px;
+      margin-right: 10px;
+      max-width: 600px;
+      width: 100%;
+
+
+    }
+}

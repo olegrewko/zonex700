@@ -1,0 +1,133 @@
+.about-grid04 {
+       max-width: 1180px;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr  1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 40px;
+      place-items: center;
+      padding: 0;
+      background-color: #f4f4ed;
+      margin: 0 auto;
+
+      padding: 60px 40px;
+}
+.about-grid {
+       max-width: 1180px;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      grid-template-rows: auto;
+      gap: 10px;
+      place-items: center;
+
+      // background-color: #f4f4ed;
+      margin: 0 auto;
+
+      padding: 60px 20px;
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__address,
+      &__tel,
+      &__email{
+        display: flex;
+
+      }
+      &__hours{
+        display: flex;
+        justify-content: space-between;
+      }
+      &__image{
+        height: 16px;
+        width: 16px;
+        margin-right: 5px;
+      }
+      &__white {
+        background-color: transparent;
+      }
+       @include xs {
+        grid-template-columns:  1fr;
+        gap: 10px;
+       }
+
+      &__title{
+
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 45px;
+        color: var(--color-dark);
+      }
+      &__text{
+
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        color: var(--color-tundora);
+      }
+        article  p:first-letter {
+      text-transform: uppercase;
+      margin: 0 5px 10px 0;
+      padding: 5px 15px;
+      border: 2px solid gainsboro;
+      font-size: 16px;
+      font-weight: 700;
+   }
+
+}
+.founders-grid {
+       max-width: 1169px;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+      grid-template-rows: auto;
+      gap: 5px;
+      place-items: center;
+      // background-color: #eeeeec;
+      margin: 0 auto;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      padding: 0px 0px;
+
+       @include xs {
+        grid-template-columns:  1fr 1fr 1fr;
+        gap: 5px;
+       }
+       @include xs420 {
+        grid-template-columns:  1fr 1fr;
+        gap: 5px;
+       }
+       @include xs380 {
+        grid-template-columns:  1fr;
+        gap: 5px;
+       }
+
+      &__title{
+
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 60px;
+        color: var(--color-tundora);
+      }
+      &__text{
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 25px;
+        color: var(--color-dark);
+      }
+        article  p:first-letter {
+      text-transform: uppercase;
+      margin: 0 5px 10px 0;
+      padding: 5px 15px;
+      border: 2px solid gainsboro;
+      font-size: 16px;
+      font-weight: 700;
+   }
+
+}

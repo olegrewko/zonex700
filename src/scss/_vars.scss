@@ -1,0 +1,18 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Jost", sans-serif;
+  --content-width: 1170px;
+  --container-offset: 10px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --color-tundora: darkslategray;
+  --color-gray: #9b9898;
+  --color-dark: #000;
+  --color-white: #fff;
+  --color-cameo: #dbbba9;
+
+}

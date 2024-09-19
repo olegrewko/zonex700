@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="5" height="9" viewBox="0 0 5 9">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 8px;
+      }
+
+      .cls-2 {
+        fill: #858585;
+        font-family: "kazen-font";
+      }
+    </style>
+  </defs>
+  <text x="-2" y="8" class="cls-1"><tspan class="cls-2"></tspan></text>
+</svg>

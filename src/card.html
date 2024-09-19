@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+
+<body class="card-page">
+  <div class="site-container">
+
+    @include('partials/header-grey.html')
+    @include('partials/breadcrumbs-card.html')
+    <main class="main">
+
+      <section class="card">
+        <h2 class="visually-hidden">Card</h2>
+
+      <!-- @include('partials/breadcrumbs.html') -->
+      <div class="card-content">
+        <div class="card-content__top">
+          @include('partials/card-top.html')
+          @include('partials/card-bottom.html')
+        </div>
+      </div>
+
+      </section>
+    </main>
+    @include('partials/footer.html')
+
+  </div>
+    <a href="#" id="toTop" style="display: block">
+      <span id="toTopHover" style="opacity: 1"> </span
+    ></a>
+
+</body>
+
+</html>

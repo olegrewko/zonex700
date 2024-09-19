@@ -1,0 +1,41 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+// @import "vendor";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/nav";
+@import "./components/shop-nav";
+@import "./components/hero";
+@import "./components/banners";
+@import "./components/products";
+@import "./components/main-products";
+@import "./components/shop-banners";
+@import "./components/free-delivery";
+@import "./components/hero-catalog";
+// @import "./components/hero-blog";
+@import "./components/breadcrumbs";
+@import "./components/catalog-filters";
+@import "./components/card-slider";
+@import "./components/card";
+@import "./components/footer";
+@import "./components/footer-black";
+@import "./components/contacts";
+@import "./components/blog";
+@import "./components/blog-content";
+@import "./components/hero-about";
+@import "./components/about-cont";
+@import "./components/cabinet";
+@import "./components/page404-content";
+// @import "./components/fotorama464.min";
+
+// @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+// тестовые стили, удалите их
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="card-page">
+  <div class="site-container">
+
+    @include('partials/header-grey.html')
+    <!-- @include('partials/breadcrumbs-card.html') -->
+    <main class="main">
+
+      <section class="card">
+        <h2 class="visually-hidden">Contacts</h2>
+
+      <!-- @include('partials/breadcrumbs.html') -->
+      <div class="card-content">
+        <div class="card-content__top">
+          @include('partials/contacts.html')
+          <!-- @include('partials/card-bottom.html') -->
+        </div>
+      </div>
+
+      </section>
+    </main>
+    @include('partials/footer-black.html')
+
+  </div>
+    <a href="#" id="toTop" style="display: block">
+      <span id="toTopHover" style="opacity: 1"> </span
+    ></a>
+    <script>
+
+  //  $('.shop-content__filter-btn').on('click', function(){
+
+  //   $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+  //   $(this).addClass('shop-content__filter-btn--active');
+  // });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.free-delivery {
+  position: relative;
+
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  background-color: #000;
+
+  &__btn{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
