@@ -1,10 +1,12 @@
 .blog-content {
 
-		 min-width: 1170px;
-    width: 100%;
+		 max-width: 1170px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
 
 		&__grid-main {
-       margin-top: 40px;
+       margin-top: 30px;
        display: flex;
        justify-content: space-between;
 
@@ -55,7 +57,7 @@
   }
 
     &__aside {
-      max-width: 400px;
+      max-width: 320px;
       width: 100%;
         @include sm {
 
@@ -90,8 +92,8 @@
         }
     }
     &__content {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 0px;
+      margin-right: 0px;
       max-width: 850px;
       overflow: hidden;
       width: 100%;
